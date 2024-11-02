@@ -3,8 +3,8 @@
     <p>{{ $store.state.contador }}</p>
 
     <div>
-        <button @click="$store.commit('incrementar')">+1</button>
-        <button @click="$store.commit('disminuir')">-1</button>
+        <button @click="$store.commit('incrementar')" id="mas">+1</button>
+        <button @click="$store.commit('disminuir')" id="menos">-1</button>
     </div>
 </template>
   
