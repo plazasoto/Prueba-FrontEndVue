@@ -1,21 +1,25 @@
 <script>
 import { RouterLink, RouterView } from 'vue-router'
+import HelloWorld from './components/HelloWorld.vue'
 import Contador from './components/Contador.vue'
+import Parent from './components/Parent.vue'
 
 export default {
   name: 'App',
   components: {
-    Contador
+    HelloWorld,
+    Contador,
+    Parent
   }
 }
 </script>
 
 <template>
-<!--   <header>
+  <header>
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <HelloWorld msg="Prueba - Desarrollo de aplicaciones front-end con framework Vue" />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
@@ -24,12 +28,19 @@ export default {
     </div>
   </header>
 
-  <RouterView /> -->
+  <RouterView />
+  <hr>
   <Contador/>
+  <hr>
+  <Parent/>
+  <hr>
+  <footer>
+    <p style="text-align: right;">ᓀ‸ᓂ</p>
+  </footer>
 </template>
 
 <style scoped>
-/*
+
 header {
   line-height: 1.5;
   max-height: 100vh;
@@ -91,5 +102,5 @@ nav a:first-of-type {
     margin-top: 1rem;
   }
 }
-*/
+
 </style>
